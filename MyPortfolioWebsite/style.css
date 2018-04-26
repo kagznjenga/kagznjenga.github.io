@@ -1,0 +1,158 @@
+
+body {
+    background-color: tan;
+    margin: 0;
+}
+
+.banner {
+    background-image: url("cup-of-coffee-1280537_1920.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    display: grid;
+    align-content: space-between;
+}
+
+.banner h1 {
+    color: #FFF;
+    font-size: 2em;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.name {
+    background-color: dimgrey;
+    background-size: cover;
+    background-position:bottom;
+    width: 100%;
+    height: 70px;
+    opacity: 0.5;
+}
+
+.name p{
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 20px;
+    color: floralwhite;
+}
+
+.navigation ul {
+    list-style-type: none;
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navigation ul li {
+    float:left;
+}
+
+.navigation ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation li:hover {
+    background-color: #555;
+    color: white;
+}
+
+h2 {
+    color: darkslategray;
+}
+
+h3 {
+    color: midnightblue;
+}
+
+ul li {
+    font-family: helvetica;
+    text-align: left
+}
+
+.main {
+    position: relative;
+    margin: 50px 60px;
+    font-size: 20px;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+.row {
+    column-rule: 2px solid black;
+    padding-left: 20px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+video {
+    background: black;
+}
+
+.personalPics {
+    background-color: blanchedalmond;
+    padding-left: 60px;
+}
+
+.myPics {
+    border-radius: 50%;
+}
+
+.yearOne {
+    background-color: wheat;
+}
+
+.achievement-box {
+    background-color: lightblue;
+}
+
+.projects-button { 
+    padding: 1px;
+    background-color: whitesmoke;
+    opacity: 0.9;
+    width: 10em;
+    text-indent: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.projects-button,
+.scratch {
+    display: inline-block;
+}
+
+.hobbies {
+    background-color: wheat;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 6px;
+}
