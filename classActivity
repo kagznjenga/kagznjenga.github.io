@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<h1>JavaScript IPO</h1>
+ 
+<p>Input:</p>
+ 
+<input id="in" text= "Meal Price">
+ 
+<button type="button" onclick="myFunction()">Submit</button>
+ 
+<p id="out"></p>
+ 
+<script>
+function myFunction() {
+    var inVar, outVar;
+ 
+    // Input
+    inVar = document.getElementById("in").value;
+   
+    // Processing
+    outVar = parseInt(inVar) + 0.08*inVar + 0.2*inVar;
+ 
+    // Output
+    document.getElementById("out").innerHTML = outVar;
+}
+</script>
+ 
+</body>
+</html>
