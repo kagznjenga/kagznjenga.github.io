@@ -1,7 +1,8 @@
-
+/*This is the styling text for adding styles to various elements on the webpage*/
 body {
     background-color: tan;
     margin: 0;
+    padding: 0;
 }
 
 .banner {
@@ -89,7 +90,8 @@ ul li {
 
 .row {
     column-rule: 2px solid black;
-    padding-left: 20px;
+    width: 100%;
+    padding: 0;
 }
 
 .column {
@@ -128,6 +130,7 @@ video {
 
 .achievement-box {
     background-color: lightblue;
+    padding: 10px 20px;
 }
 
 .projects-button { 
@@ -138,10 +141,7 @@ video {
     text-indent: 30px;
     margin-left: 20px;
     margin-bottom: 20px;
-}
-
-.projects-button,
-.scratch {
+    cursor: pointer;
     display: inline-block;
 }
 
@@ -154,5 +154,13 @@ table, th, td {
 }
 
 th, td {
-    padding: 6px;
+    padding: 5px;
+}
+
+footer {
+    width: 100%;
+    background-color: palegoldenrod;
+    color: saddlebrown;
+    text-align: center;
+    font-size: 18px;
 }

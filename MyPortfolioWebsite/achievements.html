@@ -1,6 +1,7 @@
+<!--Samuel Kagwimi Njenga-->
+<!--This page contains the skills I acquired during my coursework and the content created from those skills-->
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="en-US">
     <head>
         <title>Samuel K Njenga</title>
         <meta charset="utf-8">
@@ -10,6 +11,7 @@
     </head>
     
     <body>
+        <!--Website banner-->
         <div class= "banner">
             <h1>Achievements</h1>
             <div class="name">
@@ -19,14 +21,14 @@
         
         <div class="navigation">
             <ul>
-                <li><a href="index.html" accesskey="0" alt="Go to Home Page">Home</a></li>
-                <li><a href="aboutMyself.html" accesskey="1" alt="Go to the page about me">About Myself</a></li>
-                <li><a href="education.html" accesskey="2" alt="Go to education page">Education</a></li>
-                <li><a href="courses.html" accesskey="3" alt="Go to courses page">Courses</a></li>
-                <li><a href="achievements.html" accesskey="4" alt="Go to achievements page">Achievements</a></li>
-                <li><a href="files.html" accesskey="5" alt="Go to documents page">Documents</a></li>
-                <li><a href="hobbies.html" accesskey="6" alt="Go to hobbies page">Hobbies</a></li>
-                <li><a href="usabilityPage.html" accesskey="7" alt="Go to usability page" target="_blank">Usability Guide</a></li>
+                <li><a href="index.html" accesskey="0">Home</a></li>
+                <li><a href="aboutMyself.html" accesskey="1">About Myself</a></li>
+                <li><a href="education.html" accesskey="2">Education</a></li>
+                <li><a href="courses.html" accesskey="3">Courses</a></li>
+                <li><a href="achievements.html" accesskey="4">Achievements</a></li>
+                <li><a href="files.html" accesskey="5">Documents</a></li>
+                <li><a href="hobbies.html" accesskey="6">Hobbies</a></li>
+                <li><a href="usabilityPage.html" accesskey="7" target="_blank">Usability Guide</a></li>
             </ul>
         </div>
         
@@ -38,15 +40,63 @@
                     <div class="projects-button">
                         <h3>view projects</h3>
                     </div>
-                    <ol class="scratch" type="a">
-                        <li><a href="https://scratch.mit.edu/projects/200450622/" style="color:darkblue;" target="_blank">Scratch</a>
-                        </li>
+                    <div class="scratch">
+                        <ul>
+                            <li><a href="https://scratch.mit.edu/projects/200450622/" style="color:darkblue;" target="_blank">Scratch</a>
+                            </li>
+                        </ul>
                         <p>Click the link above to play a fun game I made using scratch. Enjoy!</p>
-                    </ol>
+                    </div>
+                    <!--Caesar cipher-->
+                    <div class="caesarCipher">
+                        <ul>
+                            <li><h4>Caesar Cipher</h4></li>
+                        </ul>
+                        <p>Input a text:</p>
+
+                        <input id="in">
+
+                        <button type="button" onclick="myFunction()">Encode</button>
+                        
+                        <p id="out"></p>
+                        <script>
+                            function myFunction() {
+                                var inVar, asciiCode, encryptedText = "";
+                                var index;
+
+                                // Input
+                                inVar = document.getElementById("in").value;
+
+                                // Processing
+                                for (index = 0; index < inVar.length; index++) {
+                                        asciiCode = inVar.charCodeAt(index);
+                                    if ((asciiCode >= 65 && asciiCode <= 90) || (asciiCode >= 97 && asciiCode <= 122)) {
+                                        asciiCode = asciiCode + 3;
+                                    }
+                                        encryptedText += String.fromCharCode(asciiCode);
+                                }
+
+                                // Output
+                                document.getElementById("out").innerHTML = 'Encoded text: ' + encryptedText;
+                            }
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
         
+        <footer>
+            Posted by &copy; Samuel Kagwimi Njenga.<br> 
+            <address>
+                Contact Information:
+                kagwimisamuel@gmail.com<br>
+                Connect with me on:
+                <a href="https://www.linkedin.com/in/samuel-k-njenga98/" class="linkedin" target="_blank"><img src="linkedin.png" alt="linkedin"></a>
+                <a href="https://www.facebook.com/samkagznjenga.98" class="facebook" target="_blank"><img src="facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/kagwimisamuel/" class="instagram" target="_blank"><img src="instagram.png" alt="instagram"></a>
+                <a href="https://twitter.com/SamKagzNjenga" class="twitter" target="_blank"><img src="twitter.png" alt="twitter"></a>
+            </address>
+        </footer>
     </body>
     
 </html>
